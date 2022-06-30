@@ -1,0 +1,1 @@
+Deepspeech2 speech-to-text model for Croatian language
