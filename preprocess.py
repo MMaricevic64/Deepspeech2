@@ -40,4 +40,4 @@ for t in txt:
           cnt_txt += 1
     print(t + ".txt has no correspondence .wav file! Deleted!")
     
-print("Data is ready!\nDeleted .wav files: {cnt_wav}\nDeleted .txt files: {cnt_txt}\nDeleted other files: {cnt_log}")
+print(f"Data is ready!\nDeleted .wav files: {cnt_wav}\nDeleted .txt files: {cnt_txt}\nDeleted other files: {cnt_log}")
