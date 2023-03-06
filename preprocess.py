@@ -23,13 +23,13 @@ for w in sorted(os.listdir("wav")):
 for w in wav:
     if w not in txt:
         os.remove(os.path.join(path, "wav", w + ".wav"))
-	    cnt_wav += 1
+        cnt_wav += 1
         print(w + ".wav has no transcription .txt file! Deleted!")
 
 for t in txt:
     if t not in wav:
         os.remove(os.path.join(path, "txt", t + ".txt"))
-	    cnt_txt += 1
+        cnt_txt += 1
         print(t + ".txt has no correspondence .wav file! Deleted!")
 
 print("Data is ready!\nDeleted .wav files: {cnt_wav}\nDeleted .txt files: {cnt_txt}\nDeleted other files: {cnt_log}")
