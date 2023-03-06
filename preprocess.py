@@ -16,7 +16,7 @@ for w in sorted(os.listdir("wav")):
     if w.endswith(".wav"):
     	wav.append(os.path.splitext(w)[0])
     else:
-	os.remove(os.path.join(path, "wav", w)
+	os.remove(os.path.join(path, "wav", w))
     	cnt_log += 1
 	print(w + "has no .wav extension! Deleted!")
 
